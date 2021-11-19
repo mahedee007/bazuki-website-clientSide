@@ -5,6 +5,8 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Explorebike from '../../Explorebike/Explorebike';
 
+
+
 const HomeProducts = () => {
     const [fixedProducts, setFixedProducts] = useState([]);
 
@@ -27,6 +29,7 @@ const HomeProducts = () => {
                       fixedProducts.map(bike=><Explorebike key={bike._id} bike={bike}></Explorebike>)
                     }
                 </Grid>
+
             </Container>
         </div>
     );

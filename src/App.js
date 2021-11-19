@@ -16,6 +16,7 @@ import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import DashboardPage from "./Components/Dashboard/DashboardPage/DashboardPage";
 import BookBikes from "./Components/Home/BookBikes/BookBikes";
 import Footer from "./Components/Footer/Footer";
+import NotFound from "./Components/NotFound/NotFound"
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
           </PrivateRoute>
           <Route exact path='/register'>
             <Register></Register>
+          </Route>
+          <Route exact path='*'>
+            <NotFound/>
           </Route>
           </Switch>
           <Footer/>

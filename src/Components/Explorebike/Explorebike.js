@@ -35,7 +35,7 @@ const Explorebike = (props) => {
                 </CardContent>
                 <CardActions>
                     <NavLink to={`/bookBikes/${_id}`}  style={{ textDecoration: 'none', margin:'auto' }}>
-                        <Button  variant="contained" size="medium" sx={{mx:'auto', color:"white", backgroundColor:"black" }}><AddShoppingCartSharpIcon/> Book Now</Button>
+                        <Button  variant="contained" size="medium" sx={{mx:'auto', color:"white", backgroundColor:"black" }}><AddShoppingCartSharpIcon/> Buy Now</Button>
                     </NavLink>
                 </CardActions>
             </Card>

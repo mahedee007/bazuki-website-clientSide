@@ -33,32 +33,35 @@ const Footer = () => {
           <Typography sx={{color:'white', fontWeight:'700'}} variant="h6" gutterBottom component="div">
         Get Social With Bazuki
       </Typography>
-      <FacebookIcon sx={{fontSize:'large', color:'white', m:'1'}}/>
-        <Twitter sx={{fontSize:'large', color:'White', m:'1'}}/>
-        <InstagramIcon sx={{fontSize:'large', color:'White', m:'1'}}/>
+      <FacebookIcon sx={{fontSize:'large', color:'white'}}/>
+        <Twitter sx={{fontSize:'large', color:'White'}}/>
+        <InstagramIcon sx={{fontSize:'large', color:'White'}}/>
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
           <Typography sx={{color:'white', fontWeight:'700'}} variant="h6" gutterBottom component="div">
         Quick Links
       </Typography>
-      <Typography sx={{color:'white', }} variant="body2" gutterBottom component="div">
+      <Typography sx={{color:'white' }} variant="body2" gutterBottom component="div">
             <PaymentIcon sx={{color:'white', }}/> Payment method
         </Typography>
-      <Typography sx={{color:'white', }} variant="body2" gutterBottom component="div">
+      <Typography sx={{color:'white' }} variant="body2" gutterBottom component="div">
             <PaymentIcon sx={{color:'white', }}/> News
         </Typography>
-      <Typography sx={{color:'white', }} variant="body2" gutterBottom component="div">
+      <Typography sx={{color:'white' }} variant="body2" gutterBottom component="div">
             <HomeIcon sx={{color:'white', }}/> Home
         </Typography>
-      <Typography sx={{color:'white', }} variant="body2" gutterBottom component="div">
+      <Typography sx={{color:'white' }} variant="body2" gutterBottom component="div">
             <PrivacyTipIcon sx={{color:'white', }}/> Privacy Policy
         </Typography>
-      <Typography sx={{color:'white', }} variant="body2" gutterBottom component="div">
+      <Typography sx={{color:'white' }} variant="body2" gutterBottom component="div">
             <AccessibilityIcon sx={{color:'white', }} /> Warranty Policy
         </Typography>
           </Grid>
           
         </Grid>
+        <Typography sx={{color:'white', textAlign:'center' }} variant="body2" gutterBottom component="div">
+        © 2021 All Rights reserve to Bazuki
+        </Typography>
       </Container>
     );
 };
