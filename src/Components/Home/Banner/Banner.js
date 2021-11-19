@@ -12,8 +12,8 @@ const Banner = () => {
         <Grid container spacing={2}>
           
           <Grid item sx={{display:'flex',alignItems: 'center' }} xs={12} md={6}>
-              <Box>
-              <Typography sx={{fontWeight:'700' }} variant= "h2"  component="div" gutterBottom>
+              <Box style={{width: '100%'}}>
+              <Typography sx={{fontWeight:'700' }} variant= "h3"  component="div" gutterBottom>
             BE A PART OF THE MOVERS GENERATION!
             </Typography>
             <Typography variant= "body1" component="div" gutterBottom>

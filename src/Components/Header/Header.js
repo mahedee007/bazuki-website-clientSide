@@ -57,7 +57,7 @@ const Header = () =>{
           <DrawerMenu />
         ) : (
           <div className={classes.navlinks}>
-            {user?.displayName && <Link className={classes.link}>{user.displayName}</Link>}
+            {user?.displayName && <Link to="/home" className={classes.link}>{user.displayName}</Link>}
             <Link  className={classes.link} to="/home">
               Home
             </Link>

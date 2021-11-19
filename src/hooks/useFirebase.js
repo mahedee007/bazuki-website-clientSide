@@ -81,7 +81,7 @@ const useFirebase = () => {
     }, [auth])
 
     useEffect(() => {
-        fetch(`https://murmuring-earth-87145.herokuapp.com/users/${user.email}`)
+        fetch(`https://shrouded-temple-49103.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -98,7 +98,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('tmr server link/users', {
+        fetch('https://shrouded-temple-49103.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

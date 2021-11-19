@@ -61,7 +61,7 @@ const DrawerMenu = () => {
             {
                user?.email ?
               <>
-              <NavLink  className={classes.navlinks} to="/dashboard">
+              <NavLink  className={classes.navlinks} to="/dashboardPage">
               Dashboard
               </NavLink>
               <Divider />
