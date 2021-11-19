@@ -49,11 +49,11 @@ const ManageOrder = () => {
                 <ThemeProvider theme={lightTheme}>
                   <Card sx={{ boxShadow: 2, border: 0}}>
                     <CardContent>
-                    <Typography sx={{textAlign: 'start',  color:"black"}} variant="h6" component="div">
-                        Product Name: {book?.title}
+                    <Typography sx={{textAlign: 'center',  color:"black"}} variant="h6" component="div">
+                         {book?.name}
                     </Typography>
                     <Typography sx={{textAlign: 'start',  color:"black"}} variant="body1" component="div">
-                        Recipient Name: {book?.name}
+                        Recipient Name: {book?.username}
                     </Typography>
                     <Typography sx={{textAlign: 'start',  color:"black"}} variant="body2" component="div">
                     Recipient Email: {book?.email}
