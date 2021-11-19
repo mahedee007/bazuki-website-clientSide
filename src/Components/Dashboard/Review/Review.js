@@ -25,7 +25,7 @@ const Review = () => {
           body: JSON.stringify(data),
         })
           .then((res) => res.json())
-          .then((result) =>{alert("Review Added Successfully!");
+          .then((result) =>{alert("Thank you for your valuable feedback!");
           reset();
           history.push(redirect_uri);});
     };
