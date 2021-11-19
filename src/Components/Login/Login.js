@@ -4,6 +4,7 @@ import { Grid } from '@mui/material';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import login from '../../images/login.png';
+import GoogleIcon from '@mui/icons-material/Google';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
@@ -49,17 +50,17 @@ const Login = () => {
                             onChange={handleOnChange}
                             variant="standard" />
 
-                        <Button sx={{ width: '100%', m: 1 }} type="submit" variant="contained">Login</Button>
+                        <Button sx={{ width: '100%', m: 1,backgroundColor: 'black' }} type="submit" variant="contained">Login</Button>
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/register">
-                            <Button variant="text" sx={{textAlign:'center'}}>New User? Please Register</Button>
+                            <Button variant="text" sx={{textAlign:'center', color: 'red'}}>New User? Please Register</Button>
                         </NavLink>
                         {isLoading && <CircularProgress />}
                         {user?.email && <Alert severity="success">Login successfully!</Alert>}
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
-                    <Button sx={{ width: '100%', m: 1 }}  onClick={handleGoogleSignIn} variant="contained">Google Sign In</Button>
+                    <Button sx={{ width: '100%', m: 1, backgroundColor: 'black' }}  onClick={handleGoogleSignIn} variant="contained"><GoogleIcon sx={{color:'white', fonSize:'large'}}/> Google Sign In</Button>
                 </Grid>
                 <Grid xs={12} md={6}>
                     <img src={login} alt=''/>

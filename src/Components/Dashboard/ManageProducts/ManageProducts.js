@@ -36,7 +36,7 @@ const ManageProducts = () => {
         </Typography>
         <Grid container spacing={{ xs: 2, md: 4 }}  columns={{ xs: 4, sm: 8, md: 12 }}>
         {
-            products.map(bike=><Grid item xs={4} sm={4} md={4} key={bike?._id}>
+            products.map(bike=><Grid item xs={12} sm={12} md={4} key={bike?._id}>
                 <Card sx={{ minWidth: 260 , maxWidth: 350, border: 0}}>
                 <CardMedia
                 component="img"

@@ -24,7 +24,7 @@ const MyBooking = () => {
      }, [user.email]);
 
      const handleDelete = id=>{
-         const confirm = window.confirm('Are you sure to delete booking?');
+         const confirm = window.confirm('Are you sure to cancel booking?');
          if(confirm){
              fetch(`https://shrouded-temple-49103.herokuapp.com/booking/${id}`, {
                 method:'DELETE'
@@ -34,7 +34,7 @@ const MyBooking = () => {
                  const remaining =booking.filter(book=>book._id!== id);
                  setBooking(remaining);
                  if(data.deletedCount){
-                    alert('Booking deleted!')
+                    alert('Cancelled Successfully!')
                  }
              })
          }
